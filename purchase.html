@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Purchases</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a href="dashboard.html"><button class="butt">Home</button></a>
+    <h3>Purchases</h3>
+    <form id="purchase-form">
+      <label for="product">Product:</label>
+      <select id="product" required>
+        <option value="Chick mash">Chick mash</option>
+        <option value="Growers mash">Growers mash</option>
+        <option value="Kienyeji mash">Kienyeji mash</option>
+        <option value="Layers mash">Layers mash</option>
+      </select>
+      <label for="quantity">Quantity (kg):</label>
+      <input type="number" id="quantity" placeholder="Enter quantity" required/><br>
+      <label for="cost">Cost:</label>
+      <input type="number" id="cost" placeholder="Enter cost" required /><br>
+      <label for="purchase-date">Date:</label>
+      <input type="date" id="purchase-date" required /><br>
+      <button type="submit">Save Purchase</button>
+    </form>
+
+    <h3>Saved Purchases</h3>
+    <div id="purchases-data">
+      <!-- Saved purchases data will be displayed here -->
+    </div>
+
+    <script src="purchases.js"></script>
+  </body>
+</html>
